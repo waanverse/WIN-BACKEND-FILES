@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,.hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+html::-webkit-scrollbar,
+.hide::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+
+/* Target the scrollbar container */
+::-webkit-scrollbar {
+    width: 4px; 
+    height: 12px; /* Height for horizontal scrollbar */
+}
+
+/* Styling the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Styling the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
