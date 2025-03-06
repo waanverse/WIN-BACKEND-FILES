@@ -15,7 +15,7 @@
 }
 
 @theme {
-  --breakpoint-xs: 350px;
+    --breakpoint-xs: 350px;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -58,4 +58,6 @@ body::-webkit-scrollbar {
     background: #555;
 }
 
-
+* {
+    font-family: "Roboto", sans-serif !important;
+}
